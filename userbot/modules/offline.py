@@ -28,10 +28,10 @@ from userbot import (  # noqa pylint: disable=unused-import isort:skip
 
 # ========================= CONSTANTS ============================
 AFKSTR = [
-    f"**Maaf {ALIVE_NAME} Sedang OFF!**",
-    f"**Maaf {ALIVE_NAME} Sedang OFF Tunggu Sampai Online!**",
-    f"**{ALIVE_NAME} Sedang OFF Tunggulah Sampai Online**",
-    f"**Maaf {ALIVE_NAME} Sedang OFF!**",
+    f"**Maaf {ALIVE_NAME} ⚔️Sedang OFF!**",
+    f"**Maaf {ALIVE_NAME} ⚔️Sedang OFF Tunggu Sampai Online!**",
+    f"**{ALIVE_NAME} ⚔️Sedang OFF Tunggulah Sampai Online**",
+    f"**Maaf {ALIVE_NAME} ⚔️Sedang OFF!**",
 ]
 
 
@@ -67,11 +67,11 @@ async def set_afk(afk_e):
     if string:
         AFKREASON = string
         await afk_e.edit(
-            f"**✘ {ALIVE_NAME} Telah OFF ✘**\
+            f"**✨ {ALIVE_NAME} Telah OFF ✨**\
         \n✦҈͜͡➳ **Karena :** `{string}`"
         )
     else:
-        await afk_e.edit(f"**✘ {ALIVE_NAME} Telah OFF ✘**")
+        await afk_e.edit(f"**✨ {ALIVE_NAME} Telah OFF ✨**")
     if user.last_name:
         await afk_e.client(
             UpdateProfileRequest(
@@ -84,7 +84,7 @@ async def set_afk(afk_e):
         )
     if BOTLOG:
         await afk_e.client.send_message(
-            BOTLOG_CHATID, f"#OFF\n**{ALIVE_NAME} Telah OFF!**"
+            BOTLOG_CHATID, f"#OFF\n**{ALIVE_NAME} ⚔️Telah OFF!**"
         )
     ISAFK = True
     afk_time = datetime.now()  # pylint:disable=E0602
@@ -112,7 +112,7 @@ async def type_afk_is_not_true(notafk):
     afk_end = back_alive.replace(microsecond=0)
     if ISAFK:
         ISAFK = False
-        msg = await notafk.respond(f"**{ALIVE_NAME} Telah Kembali!**")
+        msg = await notafk.respond(f"**{ALIVE_NAME} i am comback tod!**")
         time.sleep(7)
         await msg.delete()
         await notafk.client(
