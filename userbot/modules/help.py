@@ -21,7 +21,7 @@ async def help(event):
         if args in CMD_HELP:
             await event.edit(str(CMD_HELP[args]))
         else:
-            await event.edit("**Masukan Perintah yang Bener Goblokkkk!!**")
+            await event.edit("**Masukan Perintah yang Bener Ngentotdd!!**")
             await asyncio.sleep(15)
             await event.delete()
     else:
@@ -30,12 +30,12 @@ async def help(event):
             string += "`" + str(i)
             string += f"`\t\t{ICON_HELP}\t\t"
         await event.edit(
-            f"**✦ Daftar Perintah Untuk Man-Userbot:**\n"
-            f"**✦ Jumlah** `{len(modules)}` **Modules**\n"
-            f"**✦ Owner:** `{ALIVE_NAME}`\n\n"
+            f"**🔥Daftar Perintah DENIIZ-USERBOT🔥**\n"
+            f"**🔥Jumlah** `{len(modules)}` **Modules⚡**\n"
+            f"**🔥Owner:** `{ALIVE_NAME}`\n\n"
             f"{ICON_HELP}  {string}"
-            "\n\nSupport @Lunatic0de"
+            "\n\nSupport @onlydeniz1608"
         )
         await event.reply(
-            "\n**Contoh Ketik** `.help afk` **Untuk Melihat Informasi Module**"
+            "\n**Contoh Ketik** `.help afk` **Untuk Melihat Informasi Module Tod**"
         )
