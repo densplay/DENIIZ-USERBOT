@@ -109,7 +109,7 @@ async def on_afk(event):
         if reason:
             message_to_reply = (
                 f"**✨ {ALIVE_NAME} Sedang AFK** `{total_afk_time}` **Yang Lalu ✨**\n"
-                + f"**✦҈͜͡➳ Karena :** `{reason}`"
+                + f"**✦҈͜͡➳ Alasan :** `{reason}`"
             )
         else:
             message_to_reply = (
@@ -176,18 +176,18 @@ async def _(event):
                     await bot.send_message(event.chat_id, file=pic)
                     await bot.send_message(
                         event.chat_id,
-                        f"\n**✨ {ALIVE_NAME} Telah AFK ✨**\n**✦҈͜͡➳ Karena :** `{reason}`",
+                        f"\n**✨ {ALIVE_NAME} Telah AFK ✨**\n**✦҈͜͡➳ Alasan :** `{reason}`",
                     )
                 else:
                     await bot.send_message(
                         event.chat_id,
-                        f"\n**✨ {ALIVE_NAME} Telah AFK ✨**\n**✦҈͜͡➳ Karena :** `{reason}`",
+                        f"\n**✨ {ALIVE_NAME} Telah AFK ✨**\n**✦҈͜͡➳ Alasan :** `{reason}`",
                         file=pic,
                     )
             except BaseException:
                 await bot.send_message(
                     event.chat_id,
-                    f"\n**✨ {ALIVE_NAME} Telah AFK ✨**\n**✦҈͜͡➳ Karena :** `{reason}`",
+                    f"\n**✨ {ALIVE_NAME} Telah AFK ✨**\n**✦҈͜͡➳ Alasan :** `{reason}`",
                 )
         else:
             try:
@@ -211,18 +211,18 @@ async def _(event):
                     await bot.send_message(BOTLOG_CHATID, file=pic)
                     await bot.send_message(
                         BOTLOG_CHATID,
-                        f"\n**✨ {ALIVE_NAME} Sedang AFK ✨**\n**✦҈͜͡➳ Karena :** `{reason}`",
+                        f"\n**✨ {ALIVE_NAME} Sedang AFK ✨**\n**✦҈͜͡➳ Alasan :** `{reason}`",
                     )
                 else:
                     await bot.send_message(
                         BOTLOG_CHATID,
-                        f"\n**✨ {ALIVE_NAME} Sedang AFK ✨**\n**✦҈͜͡➳ Karena :** `{reason}`",
+                        f"\n**✨ {ALIVE_NAME} Sedang AFK ✨**\n**✦҈͜͡➳ Alasan :** `{reason}`",
                         file=pic,
                     )
             elif reason:
                 await bot.send_message(
                     BOTLOG_CHATID,
-                    f"\n**✨ {ALIVE_NAME} Sedang AFK ✨**\n**✦҈͜͡➳ Karena :** `{reason}`",
+                    f"\n**✨ {ALIVE_NAME} Sedang AFK ✨**\n**✦҈͜͡➳ Alasan :** `{reason}`",
                 )
             elif pic:
                 if pic.endswith((".tgs", ".webp")):
