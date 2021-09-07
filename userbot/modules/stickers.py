@@ -27,11 +27,11 @@ from userbot import bot
 from userbot.events import register
 
 KANGING_STR = [
-    "Wao.,Bagus Nih...Colong Dulu Yekan..",
-    "Colong Sticker dulu yee kan",
-    "ehh, mantep nih.....aku colong ya...",
-    "Ini Sticker aku colong yaa DUARR!",
-    "leh ugha ni Sticker Colong ahh~",
+    "Wao.,Bagus Nih...Curry Dulu Yekan..",
+    "Curry Sticker dulu yee kan wkwk",
+    "ehh, mantep nih.....aku curry ya...",
+    "Ini Sticker aku curry yaa DUARR!",
+    "Boleh juga ni Sticker Curry ahh~",
 ]
 
 
@@ -248,7 +248,7 @@ async def kang(args):
 
         await args.edit(
             "** Sticker Berhasil Ditambahkan!**"
-            f"\n        👻 **[KLIK DISINI](t.me/addstickers/{packname})** 👻\n**Untuk Menggunakan Stickers**",
+            f"\n        💫 **[KLIK DISINI](t.me/addstickers/{packname})** 💫\n**Untuk Menggunakan Stickers**",
             parse_mode="md",
         )
 
