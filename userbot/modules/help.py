@@ -34,8 +34,8 @@ async def help(event):
             f"**🔥Jumlah** `{len(modules)}` **Modules⚡**\n"
             f"**🔥Owner:** `{ALIVE_NAME}`\n\n"
             f"{ICON_HELP}  {string}"
-            "\n\nSupport @onlydeniz1608"
+            "\n\nSupport @Lunatic0de"
         )
         await event.reply(
-            "\n**Contoh Ketik** `.help afk` **Untuk Melihat Informasi Module Tod**"
+            "\n**Contoh Ketik** `.help afk` **✨Untuk Melihat Informasi Module Tod✨**"
         )
